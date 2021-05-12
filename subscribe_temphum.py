@@ -21,9 +21,9 @@ with open(logFile, 'w') as f:
 #database connecting code
 try:
     conn = mysql.connector.connect(host='localhost',
-                                           database='tempHumGraph',
-                                           user='root',
-                                           password='Smart@135'
+                                           database='yourDatabase',
+                                           user='user',
+                                           password=''
                                            )
     if conn.is_connected():
         print('Connected to MySQL database')
